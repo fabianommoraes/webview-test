@@ -1,7 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import * as isWebview from "is-ua-webview";
 
 function App() {
+  var webview = isWebview(navigator.userAgent);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        {webview ? "é webview" : "não é webview"}
       </header>
     </div>
   );
