@@ -1,9 +1,20 @@
 import logo from "./logo.svg";
 import "./App.css";
 import * as isWebview from "is-ua-webview";
+import GoogleLogin from "react-google-login";
 
 function App() {
-  var webview = isWebview(navigator.userAgent);
+  const webview = isWebview(navigator.userAgent);
+
+  const onSuccess = (response) => {
+    alert("SUCCESS");
+    alert(JSON.stringify(response));
+  };
+
+  const onFailure = (response) => {
+    alert("FAILURE");
+    alert(JSON.stringify(response));
+  };
 
   return (
     <div className="App">
@@ -21,6 +32,14 @@ function App() {
           Learn React
         </a>
         {webview ? "é webview" : "não é webview"}
+
+        <GoogleLogin
+          clientId="361624584650-9nbrs6phdrfspfub8ho23gnlvkdrta9b.apps.googleusercontent.com"
+          buttonText="Login"
+          onSuccess={onSuccess}
+          onFailure={onFailure}
+          cookiePolicy={"single_host_origin"}
+        />
       </header>
     </div>
   );
