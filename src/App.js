@@ -31,7 +31,11 @@ function App() {
         >
           Learn React
         </a>
+
+        <br />
         {webview ? "é webview" : "não é webview"}
+        <br />
+        <br />
 
         <GoogleLogin
           clientId="361624584650-9nbrs6phdrfspfub8ho23gnlvkdrta9b.apps.googleusercontent.com"
