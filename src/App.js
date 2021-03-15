@@ -37,6 +37,7 @@ function App() {
         <br />
         <br />
 
+        <div>nova build</div>
         <div className="g-signin2" data-onsuccess="onSignIn"></div>
 
         {/* <GoogleLogin
