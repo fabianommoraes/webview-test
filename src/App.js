@@ -6,15 +6,15 @@ import * as isWebview from "is-ua-webview";
 function App() {
   const webview = isWebview(navigator.userAgent);
 
-  const onSuccess = (response) => {
-    alert("SUCCESS");
-    alert(JSON.stringify(response));
-  };
+  // const onSuccess = (response) => {
+  //   alert("SUCCESS");
+  //   alert(JSON.stringify(response));
+  // };
 
-  const onFailure = (response) => {
-    alert("FAILURE");
-    alert(JSON.stringify(response));
-  };
+  // const onFailure = (response) => {
+  //   alert("FAILURE");
+  //   alert(JSON.stringify(response));
+  // };
 
   return (
     <div className="App">
