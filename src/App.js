@@ -16,7 +16,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
 
         <br />
-        {!webview && <button>LOGIN SOCIAL</button>}
+        {!webview && <button>LOGIN</button>}
         <br />
       </header>
     </div>
