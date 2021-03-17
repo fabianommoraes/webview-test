@@ -12,7 +12,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
 
         <br />
-        {webview ? "é webview" : "não é webview"}
+        {!webview && <button>LOGIN SOCIAL</button>}
         <br />
       </header>
     </div>
