@@ -4,7 +4,11 @@ import isWebview from "is-ua-webview";
 // import GoogleLogin from "react-google-login";
 
 function App() {
-  const webview = isWebview(navigator.userAgent);
+  // const webview = isWebview(navigator.userAgent);
+
+  const webview = /(Version\/\d+.*\/\d+.0.0.0 Mobile|; ?wv|(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari))/i.test(
+    navigator.userAgent
+  );
 
   return (
     <div className="App">
