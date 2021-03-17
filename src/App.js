@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import isWebview from "is-ua-webview";
+// import isWebview from "is-ua-webview";
 // import GoogleLogin from "react-google-login";
 
 function App() {
